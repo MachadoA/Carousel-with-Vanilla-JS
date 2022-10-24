@@ -8,11 +8,6 @@ const imageBox = document.querySelector('.image-box');
 
 let currentImageIdx = 0;
 
-// imageView.addEventListener('click', function() {
-//     this.style.display = "none";
-//     imageBox.style.display = "none";
-// })
-
 closeBtn.addEventListener('click', function(){
     imageView.style.display = "none";
     imageBox.style.display = "none";
@@ -27,7 +22,6 @@ zoomBtn.forEach(function(btn, index){
     })
 })
 
-// alterar essa funcção ara funcionar com img https
 function currentImageDisplay(position){
     imageBox.style.background = `url(images/img${currentImageIdx}.jpg) center/cover no-repeat`;
 }
